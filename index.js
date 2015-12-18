@@ -120,7 +120,7 @@ FeedRead.atom = function(xml, source, callback) {
 
         var obj = {
             title:     child_data(art, "title")
-          , guid:      child_data(art, "guid"))
+          , guid:      child_data(art, "guid")
           , content:   scrub_html(child_data(art, "content"))
           , published: child_data(art, "published")
                     || child_data(art, "updated")
